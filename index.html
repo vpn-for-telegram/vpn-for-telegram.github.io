@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#229ED9" />
+  <meta name="description" content="ВПН для Телеграмма: телеграм впн, tg vpn, тг бот впн и бесплатный впн телеграм — честный разбор. MTProto, звонки, раздельное туннелирование, рейтинг VPN 2026." />
+  <title>ВПН для Телеграмма 2026: телеграм VPN, TG VPN — рейтинг и бесплатные режимы</title>
+  <link rel="canonical" href="https://vpn-dlya-telegram.github.io/" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta property="og:url" content="https://vpn-dlya-telegram.github.io/" />
+  <meta property="og:title" content="ВПН для Телеграмма — TG VPN и обход ограничений" />
+  <meta property="og:description" content="Телеграм впн, бесплатный впн телеграм, тг бот впн: осторожность с ботами, сравнение сервисов и split tunneling." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"ВПН для Телеграмма: TG VPN и безопасность мессенджера","inLanguage":"ru-RU","datePublished":"2026-03-29","dateModified":"2026-03-29","author":{"@type":"Person","name":"Алексей Вольнов"},"publisher":{"@type":"Organization","name":"VPN для Telegram — гид","logo":{"@type":"ImageObject","url":"https://vpn-dlya-telegram.github.io/favicon.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://vpn-dlya-telegram.github.io/"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"VPN для Telegram — подборка","numberOfItems":8,"itemListElement":[
+    {"@type":"ListItem","position":1,"name":"BAZAVPN","url":"https://vpn-dlya-telegram.github.io/#bazavpn"},
+    {"@type":"ListItem","position":2,"name":"Proton VPN","url":"https://vpn-dlya-telegram.github.io/#protonvpn"},
+    {"@type":"ListItem","position":3,"name":"Windscribe","url":"https://vpn-dlya-telegram.github.io/#windscribe"},
+    {"@type":"ListItem","position":4,"name":"Mullvad VPN","url":"https://vpn-dlya-telegram.github.io/#mullvad"},
+    {"@type":"ListItem","position":5,"name":"Hide.me","url":"https://vpn-dlya-telegram.github.io/#hideme"},
+    {"@type":"ListItem","position":6,"name":"Atlas VPN","url":"https://vpn-dlya-telegram.github.io/#atlasvpn"},
+    {"@type":"ListItem","position":7,"name":"Surfshark","url":"https://vpn-dlya-telegram.github.io/#surfshark"},
+    {"@type":"ListItem","position":8,"name":"NordVPN","url":"https://vpn-dlya-telegram.github.io/#nordvpn"}
+  ]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"Что такое телеграм впн?","acceptedAnswer":{"@type":"Answer","text":"Обычно так называют VPN, который помогает стабильно работать с Telegram при блокировках или плохих маршрутах. Сам Telegram шифрует MTProto; VPN добавляет отдельный туннель на уровне устройства."}},
+    {"@type":"Question","name":"Безопасен ли тг бот впн?","acceptedAnswer":{"@type":"Answer","text":"Не все боты безопасны: у разных ботов разные политики логов. Оформление через известного провайдера с сайтом и поддержкой надёжнее анонимного бота без реквизитов."}},
+    {"@type":"Question","name":"Бесплатный впн телеграм — стоит ли?","acceptedAnswer":{"@type":"Answer","text":"Бесплатные тарифы часто с лимитами и рекламой. Для голосовых звонков и больших медиа лучше платный план или пробный период у проверенного бренда."}}
+  ]}
+  </script>
+</head>
+<body>
+  <div class="bg-soft" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <header class="tg-header" data-header>
+    <div class="container tg-header__row">
+      <a class="tg-brand" href="/">
+        <span class="tg-brand__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M2 12l20-7-10 18-2-8-8-3z"/></svg>
+        </span>
+        <span>VPN · Telegram</span>
+      </a>
+      <div style="display:flex;align-items:center;gap:.5rem;">
+        <button type="button" class="btn btn--tg" data-scroll-to="#rating">Рейтинг</button>
+        <button type="button" class="burger" data-burger aria-label="Меню"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="drawer" data-drawer>
+    <div class="drawer__backdrop" data-drawer-close aria-hidden="true"></div>
+    <div class="drawer__panel">
+      <div class="drawer__top">
+        <strong>Разделы</strong>
+        <button type="button" class="drawer__close" data-drawer-close aria-label="Закрыть">×</button>
+      </div>
+      <nav class="drawer__links">
+        <a href="#tg-core" data-drawer-link>О Telegram</a>
+        <a href="#mtproto" data-drawer-link>MTProto</a>
+        <a href="#calls" data-drawer-link>Звонки</a>
+        <a href="#bots" data-drawer-link>Боты</a>
+        <a href="#split-tg" data-drawer-link>Split VPN</a>
+        <a href="#editor-choice" data-drawer-link>Выбор</a>
+        <a href="#rating" data-drawer-link>ТОП</a>
+        <a href="#compare" data-drawer-link>Таблица</a>
+        <a href="#faq" data-drawer-link>FAQ</a>
+      </nav>
+    </div>
+  </div>
+
+  <nav class="tab-nav" data-side-nav aria-label="Оглавление">
+    <div class="container tab-nav__inner">
+      <a href="#tg-core" data-side-link data-target="#tg-core" class="is-active">Telegram</a>
+      <a href="#mtproto" data-side-link data-target="#mtproto">MTProto</a>
+      <a href="#calls" data-side-link data-target="#calls">Звонки</a>
+      <a href="#bots" data-side-link data-target="#bots">Тг-боты</a>
+      <a href="#split-tg" data-side-link data-target="#split-tg">Split</a>
+      <a href="#editor-choice" data-side-link data-target="#editor-choice">Выбор</a>
+      <a href="#rating" data-side-link data-target="#rating">Рейтинг</a>
+      <a href="#compare" data-side-link data-target="#compare">Таблица</a>
+      <a href="#faq" data-side-link data-target="#faq">FAQ</a>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="hero-tg">
+      <div class="container bento">
+        <div class="bento__main">
+          <div class="pills">
+            <span class="pill">Обновлено 29.03.2026</span>
+            <span class="pill pill--dark">впн для телеграмма</span>
+            <span class="pill">tg vpn</span>
+          </div>
+          <h1>ВПН для Телеграмма: телеграм впн, TG VPN и безопасный обход без «серых» ботов</h1>
+          <p class="lead">
+            Запросы «<strong>телеграм впн</strong>», «<strong>tg vpn</strong>», «<strong>тг бот впн</strong>» и «<strong>бесплатный впн телеграм</strong>»
+            часто ведут к однообразным страницам. Здесь — <strong>другая структура</strong>: отдельно про MTProto, голосовые звонки, мошеннические схемы в ботах и
+            раздельное туннелирование только для клиента Telegram. Рейтинг — <strong>иной набор VPN</strong>, чем в обзоре для Roblox или YouTube.
+          </p>
+          <div style="display:flex;flex-wrap:wrap;gap:.5rem;">
+            <button type="button" class="btn btn--tg" data-scroll-to="#rating">К подборке VPN</button>
+            <a class="btn btn--line" href="#compare">Сравнить</a>
+          </div>
+          <div class="author-card">
+            <img src="author.jpg" alt="" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="author-card__name">Алексей Вольнов</div>
+              <div class="author-card__role">Мессенджеры и сетевые политики</div>
+            </div>
+            <div class="soc-row">
+              <a href="https://tenchat.ru/search/people?searchStr=%D0%98%D1%80%D0%B8%D0%BD%D0%B0+%D0%9D%D0%BE%D0%B2%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0" target="_blank" rel="noopener nofollow" aria-label="TenChat"><img src="th.svg" alt="" /></a>
+              <a href="https://vk.cc/cUxPHl" target="_blank" rel="noopener nofollow" aria-label="ВКонтакте"><img src="vk.svg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="bento__side">
+          <div class="mini-card">
+            <h2>Зачем VPN, если есть MTProto?</h2>
+            <p>VPN меняет маршрут на уровне ОС и помогает, когда блокируют по IP или «ломают» DPI. Это не замена шифрованию Telegram, а дополнительный слой.</p>
+          </div>
+          <div class="mini-card" style="border-top-color:#7c3aed;">
+            <h2>Голос и видео</h2>
+            <p>Для WebRTC и звонков важны стабильный UDP и низкий джиттер — смотрите раздел ниже.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="tg-core">
+      <div class="container">
+        <h2 class="block__title">Telegram за две минуты</h2>
+        <p class="block__lead">
+          <strong>Telegram</strong> — мессенджер с облачными чатами, каналами и ботами. Данные в «облачных» чатах обрабатываются через инфраструктуру Telegram;
+          секретные чаты используют end-to-end отдельно. Независимо от режима, при <strong>жёстких блокировках</strong> на уровне провайдера может понадобиться
+          обход на устройстве — здесь и появляется <strong>vpn для телеграмма</strong>.
+        </p>
+        <div class="grid-2">
+          <div class="mini-card" style="border-top-color:#22c55e;">
+            <h2>Клиенты</h2>
+            <p>Официальные приложения для Windows, macOS, Linux, Android, iOS. Обновляйте только из магазинов или официального сайта — это базовая защита от поддельных «тг» клиентов.</p>
+          </div>
+          <div class="mini-card" style="border-top-color:#f59e0b;">
+            <h2>Каналы и боты</h2>
+            <p>Боты не должны заменять здравый смысл: не передавайте пароли и 2FA незнакомым «тг бот впн» с обещанием «вечного бесплатного впн телеграм».</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="mtproto" style="background:#fff;border-block:1px solid var(--line);">
+      <div class="container">
+        <h2 class="block__title">MTProto и VPN: не путать уровни</h2>
+        <p class="block__lead">
+          <strong>MTProto</strong> — протокол Telegram между клиентом и серверами. <strong>VPN</strong> создаёт туннель между вашим устройством и VPN-сервером.
+          Если вы включаете VPN, трафик Telegram (и остальных приложений) может пойти через VPN-сервер — это удобно при цензуре, но добавляет «плечо» на карте маршрута.
+        </p>
+        <div class="quote-block">
+          «TG VPN» в быту — это не отдельный протокол, а обычный VPN-сервис, который вы выбрали для всего устройства или для избранных приложений (split tunneling).
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="calls">
+      <div class="container">
+        <h2 class="block__title">Голосовые и видеозвонки: что важно для tg vpn</h2>
+        <p class="block__lead">
+          Звонки в Telegram используют сценарии, чувствительные к задержкам. Если ваш <strong>tg vpn</strong> поднимает пинг или режет UDP, качество звука падает.
+          Для теста выберите ближайший сервер VPN и протокол WireGuard, затем сравните с отключённым VPN.
+        </p>
+      </div>
+    </section>
+
+    <section class="block" id="bots">
+      <div class="container">
+        <h2 class="block__title">Тг бот впн: риски «бесплатного впн телеграм»</h2>
+        <p class="block__lead">
+          Во многих ботах предлагают «подключить VPN в один клик». Не все боты злоумышленники, но:
+        </p>
+        <div class="note-card">
+          <strong>На что смотреть:</strong> есть ли у сервиса публичный сайт, политика конфиденциальности, юридическое лицо, оплата через прозрачные каналы.
+          Если бот просит «права администратора» на устройстве или доступ к SMS — это красный флаг.
+        </div>
+        <p class="block__lead" style="margin-top:1rem;">
+          <strong>BAZAVPN</strong> и другие крупные бренды оформляют через сайт и личный кабинет — это не «магия», а снижение риска для пользователя, который ищет «впн для телеграмма» впервые.
+        </p>
+      </div>
+    </section>
+
+    <section class="block" id="split-tg">
+      <div class="container">
+        <h2 class="block__title">Раздельное туннелирование: только Telegram</h2>
+        <p class="block__lead">
+          <strong>Split tunneling</strong> позволяет направить в VPN только выбранные приложения. Если вам нужен доступ к Telegram при блокировках, но не хотите гонять игры и стриминг через VPN,
+          настройте туннель только для <code>Telegram.exe</code> (Windows) или аналога в macOS/Linux — если ваш VPN-клиент поддерживает выбор приложений.
+        </p>
+      </div>
+    </section>
+
+    <section class="block" id="editor-choice">
+      <div class="container">
+        <h2 class="block__title">Выбор редакции для «впн для телеграмма»</h2>
+        <div class="editor-box">
+          <div class="k">РЕКОМЕНДАЦИЯ №1</div>
+          <h2>BAZAVPN</h2>
+          <p>
+            Для пользователей из России удобна связка: Telegram-бот для оформления, личный кабинет, безлимит, VLESS/WireGuard, пробный период 14 дней.
+            Подходит для запросов «лучший vpn для телеграмма» в смысле «предсказуемая поддержка и понятные условия», а не анонимного «тг бот впн» с неизвестной политикой логов.
+          </p>
+          <a class="btn btn--tg" href="https://baza-vpn.pro/" target="_blank" rel="noopener">Сайт BAZAVPN →</a>
+          <a class="btn btn--line" href="#bazavpn">К карточке</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="rating">
+      <div class="container">
+        <div class="rc-head">
+          <h2 class="block__title">Рейтинг VPN для Telegram</h2>
+          <p class="block__lead">
+            Ниже — <strong>другой набор</strong>, чем в обзоре для Roblox: Proton, Windscribe, Mullvad, Hide.me, Atlas, Surfshark, Nord рядом с BAZAVPN.
+            Фильтры помогут найти <strong>бесплатный впн телеграм</strong> (с ограничениями) или платные тарифы.
+          </p>
+          <div class="rc-controls" aria-label="Фильтры">
+            <div>
+              <label for="vpnSearch">Поиск</label>
+              <input id="vpnSearch" type="search" placeholder="wireguard, бесплатно…" />
+            </div>
+            <div>
+              <label for="vpnPlatform">Платформа</label>
+              <select id="vpnPlatform">
+                <option value="all">Любая</option>
+                <option value="windows">Windows</option>
+                <option value="macos">macOS</option>
+                <option value="android">Android</option>
+                <option value="ios">iOS</option>
+                <option value="linux">Linux</option>
+              </select>
+            </div>
+            <div>
+              <label for="vpnFree">Бесплатный слой</label>
+              <select id="vpnFree">
+                <option value="all">Не важно</option>
+                <option value="yes">Есть free / пробный</option>
+                <option value="no">Только платный</option>
+              </select>
+            </div>
+            <div>
+              <label for="vpnSort">Сортировка</label>
+              <select id="vpnSort">
+                <option value="best">Лучшие</option>
+                <option value="rating_desc">Рейтинг ↓</option>
+                <option value="rating_asc">Рейтинг ↑</option>
+                <option value="speed_desc">Скорость ↓</option>
+                <option value="price_asc">Цена ↑</option>
+                <option value="reviews_worst_to_best">Отзывы: хуже → лучше</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="rc-meta"><span id="vpnCount">Показано: 0</span></div>
+
+        <div id="vpnGrid" aria-live="polite">
+
+          <article class="vpn-card is-pinned" data-vpn data-id="bazavpn" id="bazavpn" data-rating="9.9" data-speed="99" data-price="150" data-reviews="5" data-free="yes" data-platforms="windows,macos,android,ios,linux" data-search="bazavpn впн для телеграмма телеграм впн tg vpn тг бот">
+            <div class="vpn-card__pin">№1</div>
+            <div class="vpn-card__top">
+              <div>
+                <h3 class="vpn-card__title" data-title>1. BAZAVPN — VPN для Telegram с поддержкой в РФ</h3>
+                <div>
+                  <span class="tag">WireGuard</span>
+                  <span class="tag tag--hot">пробный 14 дн.</span>
+                  <span class="tag">от 150 ₽</span>
+                </div>
+              </div>
+              <div style="display:flex;gap:.65rem;align-items:flex-start;">
+                <div class="score__logo"><img src="bazavpn.png" alt="" loading="lazy" /></div>
+                <div class="score__wrap">
+                  <div class="score__num">9.9/10</div>
+                  <div class="score__stars">★★★★★</div>
+                </div>
+              </div>
+            </div>
+            <div class="vpn-card__block"><span class="vpn-card__label">Почему для Telegram</span><p class="vpn-card__text">Оформление через Telegram-бота, понятные тарифы, безлимит — удобно для тех, кто ищет «телеграм впн» без лишней бюрократии.</p></div>
+            <div class="vpn-card__cta">
+              <a class="btn btn--tg" href="https://baza-vpn.pro/" target="_blank" rel="noopener">baza-vpn.pro</a>
+              <a class="btn btn--line" href="https://lk.baza-vpn.pro/" target="_blank" rel="noopener">Личный кабинет</a>
+            </div>
+            <p class="vpn-card__tip"><strong>Совет:</strong> после подключения проверьте задержку звонка в Telegram с контактом в той же стране.</p>
+          </article>
+
+          <article class="vpn-card" data-vpn data-id="protonvpn" id="protonvpn" data-rating="9.4" data-speed="94" data-price="400" data-reviews="4.85" data-free="yes" data-platforms="windows,macos,android,ios,linux" data-search="proton vpn secure core бесплатный впн телеграм">
+            <div class="vpn-card__top">
+              <div>
+                <h3 class="vpn-card__title" data-title>2. Proton VPN</h3>
+                <div><span class="tag">Secure Core</span><span class="tag">free</span></div>
+              </div>
+              <div class="score__wrap">
+                <div class="score__logo"><span class="logo-txt">Proton</span></div>
+                <div class="score__num">9.4/10</div>
+                <div class="score__stars">★★★★☆</div>
+              </div>
+            </div>
+            <div class="vpn-card__block"><span class="vpn-card__label">Заметка</span><p class="vpn-card__text">Сильный бренд приватности; бесплатный слой для лёгкого «tg vpn» теста, медиа и звонки часто требуют платного.</p></div>
+            <div class="vpn-card__cta"><a class="btn btn--tg" href="https://protonvpn.com/" target="_blank" rel="nofollow noopener">Сайт Proton VPN</a></div>
+          </article>
+
+          <article class="vpn-card" data-vpn data-id="windscribe" id="windscribe" data-rating="9.1" data-speed="92" data-price="0" data-reviews="4.78" data-free="yes" data-platforms="windows,macos,android,ios,linux" data-search="windscribe бесплатный впн телеграм">
+            <div class="vpn-card__top">
+              <div>
+                <h3 class="vpn-card__title" data-title>3. Windscribe</h3>
+                <div><span class="tag tag--hot">Free лимит</span></div>
+              </div>
+              <div class="score__wrap">
+                <div class="score__logo"><span class="logo-txt">WS</span></div>
+                <div class="score__num">9.1/10</div>
+                <div class="score__stars">★★★★☆</div>
+              </div>
+            </div>
+            <div class="vpn-card__block"><span class="vpn-card__label">Для «бесплатный впн телеграм»</span><p class="vpn-card__text">Удобно для экспериментов; лимиты могут не хватить для больших файлов в каналах.</p></div>
+            <div class="vpn-card__cta"><a class="btn btn--tg" href="https://windscribe.com/" target="_blank" rel="nofollow noopener">Сайт Windscribe</a></div>
+          </article>
+
+          <article class="vpn-card" data-vpn data-id="mullvad" id="mullvad" data-rating="9.5" data-speed="95" data-price="500" data-reviews="4.9" data-free="no" data-platforms="windows,macos,android,ios,linux" data-search="mullvad">
+            <div class="vpn-card__top">
+              <div>
+                <h3 class="vpn-card__title" data-title>4. Mullvad VPN</h3>
+                <div><span class="tag">анонимность</span></div>
+              </div>
+              <div class="score__wrap">
+                <div class="score__logo"><span class="logo-txt">MV</span></div>
+                <div class="score__num">9.5/10</div>
+                <div class="score__stars">★★★★★</div>
+              </div>
+            </div>
+            <div class="vpn-card__block"><span class="vpn-card__label">Профиль</span><p class="vpn-card__text">Минималистичный клиент; для Telegram — если важна политика «no-log» и WireGuard.</p></div>
+            <div class="vpn-card__cta"><a class="btn btn--tg" href="https://mullvad.net/" target="_blank" rel="nofollow noopener">Сайт Mullvad</a></div>
+          </article>
+
+          <article class="vpn-card" data-vpn data-id="hideme" id="hideme" data-rating="9.2" data-speed="93" data-price="330" data-reviews="4.8" data-free="yes" data-platforms="windows,macos,android,ios,linux" data-search="hide.me vpn">
+            <div class="vpn-card__top">
+              <div>
+                <h3 class="vpn-card__title" data-title>5. Hide.me VPN</h3>
+                <div><span class="tag">free</span></div>
+              </div>
+              <div class="score__wrap">
+                <div class="score__logo"><img src="hidemyname.svg" alt="" loading="lazy" width="48" height="48" /></div>
+                <div class="score__num">9.2/10</div>
+                <div class="score__stars">★★★★☆</div>
+              </div>
+            </div>
+            <div class="vpn-card__block"><span class="vpn-card__label">Идея</span><p class="vpn-card__text">Известный бренд с бесплатным тарифом с ограничениями — для сравнения с BAZAVPN на вашей сети.</p></div>
+            <div class="vpn-card__cta"><a class="btn btn--tg" href="https://hide.me/" target="_blank" rel="nofollow noopener">Сайт Hide.me</a></div>
+          </article>
+
+          <article class="vpn-card" data-vpn data-id="atlasvpn" id="atlasvpn" data-rating="8.8" data-speed="89" data-price="200" data-reviews="4.65" data-free="yes" data-platforms="windows,macos,android,ios" data-search="atlas vpn">
+            <div class="vpn-card__top">
+              <div>
+                <h3 class="vpn-card__title" data-title>6. Atlas VPN</h3>
+                <div><span class="tag">простой UI</span></div>
+              </div>
+              <div class="score__wrap">
+                <div class="score__logo"><span class="logo-txt">AV</span></div>
+                <div class="score__num">8.8/10</div>
+                <div class="score__stars">★★★★☆</div>
+              </div>
+            </div>
+            <div class="vpn-card__block"><span class="vpn-card__label">Для кого</span><p class="vpn-card__text">Быстрый старт; для тяжёлых медиа в Telegram сравните скорость на платном плане.</p></div>
+            <div class="vpn-card__cta"><a class="btn btn--tg" href="https://atlasvpn.com/" target="_blank" rel="nofollow noopener">Сайт Atlas VPN</a></div>
+          </article>
+
+          <article class="vpn-card" data-vpn data-id="surfshark" id="surfshark" data-rating="9.0" data-speed="91" data-price="350" data-reviews="4.8" data-free="no" data-platforms="windows,macos,android,ios,linux" data-search="surfshark">
+            <div class="vpn-card__top">
+              <div>
+                <h3 class="vpn-card__title" data-title>7. Surfshark</h3>
+                <div><span class="tag">мультиустройства</span></div>
+              </div>
+              <div class="score__wrap">
+                <div class="score__logo"><span class="logo-txt">SH</span></div>
+                <div class="score__num">9.0/10</div>
+                <div class="score__stars">★★★★☆</div>
+              </div>
+            </div>
+            <div class="vpn-card__block"><span class="vpn-card__label">Сценарий</span><p class="vpn-card__text">Один аккаунт на несколько устройств — удобно, если Telegram и браузер на разных ОС.</p></div>
+            <div class="vpn-card__cta"><a class="btn btn--tg" href="https://surfshark.com/" target="_blank" rel="nofollow noopener">Сайт Surfshark</a></div>
+          </article>
+
+          <article class="vpn-card" data-vpn data-id="nordvpn" id="nordvpn" data-rating="9.3" data-speed="93" data-price="400" data-reviews="4.82" data-free="no" data-platforms="windows,macos,android,ios,linux" data-search="nordvpn">
+            <div class="vpn-card__top">
+              <div>
+                <h3 class="vpn-card__title" data-title>8. NordVPN</h3>
+                <div><span class="tag">крупный бренд</span></div>
+              </div>
+              <div class="score__wrap">
+                <div class="score__logo"><span class="logo-txt">N</span></div>
+                <div class="score__num">9.3/10</div>
+                <div class="score__stars">★★★★☆</div>
+              </div>
+            </div>
+            <div class="vpn-card__block"><span class="vpn-card__label">Заметка</span><p class="vpn-card__text">Стабильные приложения; для «телеграм впн» сравните пинг до ближайшего сервера на своём провайдере.</p></div>
+            <div class="vpn-card__cta"><a class="btn btn--tg" href="https://nordvpn.com/" target="_blank" rel="nofollow noopener">Сайт NordVPN</a></div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="compare">
+      <div class="container">
+        <h2 class="block__title">Таблица: сравнение для Telegram</h2>
+        <p class="block__lead">Сортировка по столбцам. Данные ориентировочные.</p>
+        <div class="compare-wrap">
+          <table class="compare" id="compareTable">
+            <thead>
+              <tr>
+                <th data-sort="name">Сервис</th>
+                <th data-sort="rating" data-best="max">Рейтинг</th>
+                <th data-sort="servers" data-best="max">Сеть (оценка)</th>
+                <th>РФ</th>
+                <th data-sort="free" data-best="yes">Free</th>
+                <th data-sort="price" data-best="min">Цена ₽</th>
+                <th data-sort="speed" data-best="max">Скорость</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>BAZAVPN</td>
+                <td data-value="9.9">9.9</td>
+                <td data-value="88">88</td>
+                <td>да</td>
+                <td data-value="1">пробный</td>
+                <td data-value="150">150</td>
+                <td data-value="99">99</td>
+              </tr>
+              <tr>
+                <td>Proton VPN</td>
+                <td data-value="9.4">9.4</td>
+                <td data-value="90">90</td>
+                <td>нет</td>
+                <td data-value="1">лимит</td>
+                <td data-value="400">400</td>
+                <td data-value="94">94</td>
+              </tr>
+              <tr>
+                <td>Windscribe</td>
+                <td data-value="9.1">9.1</td>
+                <td data-value="78">78</td>
+                <td>нет</td>
+                <td data-value="1">лимит</td>
+                <td data-value="0">0+</td>
+                <td data-value="92">92</td>
+              </tr>
+              <tr>
+                <td>Mullvad</td>
+                <td data-value="9.5">9.5</td>
+                <td data-value="85">85</td>
+                <td>частично</td>
+                <td data-value="0">нет</td>
+                <td data-value="500">~500</td>
+                <td data-value="95">95</td>
+              </tr>
+              <tr>
+                <td>Hide.me</td>
+                <td data-value="9.2">9.2</td>
+                <td data-value="82">82</td>
+                <td>нет</td>
+                <td data-value="1">лимит</td>
+                <td data-value="330">330</td>
+                <td data-value="93">93</td>
+              </tr>
+              <tr>
+                <td>Atlas VPN</td>
+                <td data-value="8.8">8.8</td>
+                <td data-value="75">75</td>
+                <td>нет</td>
+                <td data-value="1">лимит</td>
+                <td data-value="200">200</td>
+                <td data-value="89">89</td>
+              </tr>
+              <tr>
+                <td>Surfshark</td>
+                <td data-value="9.0">9.0</td>
+                <td data-value="88">88</td>
+                <td>нет</td>
+                <td data-value="0">нет</td>
+                <td data-value="350">350</td>
+                <td data-value="91">91</td>
+              </tr>
+              <tr>
+                <td>NordVPN</td>
+                <td data-value="9.3">9.3</td>
+                <td data-value="92">92</td>
+                <td>нет</td>
+                <td data-value="0">нет</td>
+                <td data-value="400">400</td>
+                <td data-value="93">93</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="faq">
+      <div class="container">
+        <h2 class="block__title">FAQ: впн для телеграмма и tg vpn</h2>
+        <input type="search" class="faq-inp" placeholder="Поиск…" data-faq-search aria-label="Поиск по FAQ" />
+        <div data-faq-list>
+          <details class="faq__item"><summary class="faq__q">Чем эта страница отличается от обзора для Roblox?</summary><p class="faq__a">Другая структура блоков, акцент на MTProto, звонки, боты и <strong>иной список VPN</strong>.</p></details>
+          <details class="faq__item"><summary class="faq__q">Телеграм впн обязателен?</summary><p class="faq__a">Не всегда: если мессенджер работает без сбоев, отдельный VPN может не понадобиться. Он нужен при блокировках или плохом маршруте.</p></details>
+          <details class="faq__item"><summary class="faq__q">TG VPN — это отдельное приложение?</summary><p class="faq__a">Обычно нет: это стандартный VPN-клиент, который вы ставите на устройство. «Telegram VPN» в названии — маркетинг.</p></details>
+          <details class="faq__item"><summary class="faq__q">Тг бот впн без сайта — можно доверять?</summary><p class="faq__a">Риск выше: проверяйте репутацию, не передавайте лишние данные. Предпочтительны провайдеры с сайтом и документами.</p></details>
+          <details class="faq__item"><summary class="faq__q">Бесплатный впн телеграм для звонков?</summary><p class="faq__a">Возможен, но часто с лимитами скорости. Для стабильных звонков чаще подходит платный план или пробный период.</p></details>
+          <details class="faq__item"><summary class="faq__q">VPN ускорит загрузку каналов?</summary><p class="faq__a">Не обязательно: иногда наоборот. Измеряйте скорость до и после на одном канале.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-tg" id="footer">
+    <div class="container footer-tg__grid">
+      <div>
+        <strong>VPN для Telegram</strong>
+        <p style="color:var(--muted);font-size:0.9rem;">Материал информационный; условия сервисов уточняйте на официальных сайтах.</p>
+      </div>
+      <div>
+        <p><a href="#rating">Рейтинг</a> · <a href="#compare">Таблица</a> · <a href="#faq">FAQ</a></p>
+        <p><button type="button" class="btn btn--line" data-scroll-top>Наверх</button></p>
+      </div>
+    </div>
+    <div class="footer-tg__bottom">© 2026 · vpn-dlya-telegram.github.io</div>
+  </footer>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
